@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: cursive;
+    background-color:rgb(209, 218, 221);
+    color: black;
+    scroll-behavior: smooth;
+  }
+  
+  .hero {
+    background: linear-gradient(-45deg,#5095e4, #368cd6, #4cf0ed, #347ee687);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    text-align: center;
+    padding: 4rem 1rem;
+    color: black;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 5% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  .profile-pic {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+  }
+  
+  /* Typing animation */
+  .typewriter {
+    overflow: hidden;
+    border-right: .15em solid #d3bebe;
+    white-space: nowrap;
+    margin: 0 auto 1rem auto;
+    animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    width: fit-content;
+    font-size: 2rem;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(206, 173, 173) }
+  }
+  
+  nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+  }
+  
+  nav a {
+    color: #dfddead0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #000000;
+  }
+  
+  section {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Glassmorphism Card */
+  .project-card {
+    background: rgb(139, 196, 215);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(33, 15, 71, 0);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px lightblue;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Glow Button */
+  .btn-glow {
+    background: #4361ee;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 30px;
+    color: rgb(94, 69, 69);
+    font-weight: bold;
+    box-shadow: 0 0 15px yellow;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-glow:hover {
+    background: #4cc9f0;
+    box-shadow: 0 0 25px #4cc9f0;
+  }
+  
+  footer {
+    background-color: rgb(139, 196, 215);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
+  
